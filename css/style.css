@@ -66,3 +66,14 @@ header .nav-top span {
 }
 
 /* final header */
+
+/* inicio mediaqueries */
+@media(min-width: 48em) {
+    header .nav-top span {
+        display: inline;
+    }
+
+    header .nav-top a i {
+        font-size: 120%;
+    }
+}
