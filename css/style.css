@@ -142,5 +142,32 @@ header nav .menu li:last-child a {
         padding: 0.5em 0em 1.25em 1.25em;
         border-bottom: 0px;
     }
-
 }
+
+/* inicio blog */
+
+.container .cabecera {
+    max-width: var(--anchomaximo);
+    height: 20vh;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centramos verticalmente */
+}
+
+.container section {
+    width: 100%;
+    height: 80vh;
+    background-color: orangered;
+}
+
+.container section article {
+    width: calc(33.33% - 20px);
+    margin: 0 10px;
+    display: inline-block;
+    background-color: green;
+}
+
+
+/* final blog */
