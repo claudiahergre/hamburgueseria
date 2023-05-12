@@ -38,3 +38,31 @@ body {
     font-family: var(--fuenteprincipal);
     font-size: var(--font-size);
 }
+
+/* inicio header */
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header .nav-top span {
+    color: white;
+    display: none;
+}
+
+/* final header */
