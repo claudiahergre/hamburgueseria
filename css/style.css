@@ -80,6 +80,14 @@ header nav .menu {
     width: 100%;
 }
 
+header nav .menu .activa {
+    color: var(--colorprincipal);
+}
+
+header nav .menu a:hover {
+    color: var(--colorprincipal);
+}
+
 header nav .hamburguesa {
     cursor: pointer;
     width: 1.875em;
