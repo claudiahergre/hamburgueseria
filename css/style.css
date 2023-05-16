@@ -119,39 +119,6 @@ header nav .menu li:last-child a {
 
 /* final header */
 
-/* inicio mediaqueries */
-@media(min-width: 48em) {
-    header .nav-top span {
-        display: inline;
-    }
-
-    header .nav-top a i {
-        font-size: 120%;
-    }
-
-    header .nav-top .container {
-        justify-content: space-between;
-    }
-}
-
-@media(min-width: 62.75em) {
-    header nav .menu {
-        width: auto;
-    }
-
-    header nav .hamburguesa {
-        display: none;
-    }
-
-    header nav .menu li {
-        display: inline-block;
-    }
-
-    header nav .menu a {
-        padding: 0.5em 0em 1.25em 1.25em;
-        border-bottom: 0px;
-    }
-}
 
 /* inicio blog */
 main {
@@ -238,10 +205,6 @@ main {
 }
 
 /* final blog */
-/* inicio mediaqueries blog */
-
-
-/* final mediaqueries blog */
 
 /* inicio footer */
 footer {
@@ -271,12 +234,6 @@ footer a:hover {
     position: fixed;
     bottom: 4.375rem;
     right: 1.25rem;
-}
-
-@media(min-width: 62.75em) {
-    footer {
-        text-align: left;
-    }
 }
 
 /* final footer */
@@ -344,12 +301,6 @@ footer a:hover {
 
 .hero .container {
     padding: 0 var(--margingrid);
-}
-
-@media(min-width: 62.75em) {
-    .hero .container {
-        padding: 0;
-    }
 }
 
 /* final hero */
@@ -438,9 +389,19 @@ main section .enlace {
 
 /* mediaqueries */
 
-/* media services */
-
 @media(min-width:48rem) {
+    header .nav-top span {
+        display: inline;
+    }
+
+    header .nav-top a i {
+        font-size: 120%;
+    }
+
+    header .nav-top .container {
+        justify-content: space-between;
+    }
+
     main #services article {
         width: 50%;
         border-bottom: 0px;
@@ -455,6 +416,31 @@ main section .enlace {
 }
 
 @media(min-width:62rem) {
+    header nav .menu {
+        width: auto;
+    }
+
+    header nav .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a {
+        padding: 0.5em 0em 1.25em 1.25em;
+        border-bottom: 0px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .hero .container {
+        padding: 0;
+    }
+
     main #services article {
         width: 33.333%;
     }
