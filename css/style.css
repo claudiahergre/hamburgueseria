@@ -387,6 +387,51 @@ main section .enlace {
 
 /* final ourservices */
 
+/* inicio aboutus */
+main #aboutus .grid figure {
+    /* background-color: tomato; */
+    width: 100%;
+    /* height: 400px; */
+}
+
+main #aboutus .grid>div {
+    /* background-color: violet; */
+    width: 100%;
+    /* height: 400px; */
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 95%;
+    margin: 1.5rem auto;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+/* final aboutus */
+
 /* mediaqueries */
 
 @media(min-width:48rem) {
@@ -411,8 +456,23 @@ main section .enlace {
     }
 
     main #services article:last-child {
-        width: 100%;
+        width: 50%;
     }
+
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        width: 93%;
+        margin: var(--margingrid) 0;
+    }
+
 }
 
 @media(min-width:62rem) {
