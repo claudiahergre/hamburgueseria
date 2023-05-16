@@ -432,6 +432,47 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* final aboutus */
 
+/* inicio menu */
+
+.menudeldia {
+    width: 100%;
+    height: 80vh;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menudeldia .izq {
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+}
+
+.izq ul {
+    width: 100%;
+    height: 50%;
+    background-color: #fa573a;
+}
+
+.izq .offers {
+    width: 100%;
+    height: 50%;
+    background-color: teal;
+}
+
+.menudeldia .dcha {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menudeldia .dcha article {
+    width: 100%;
+}
+
+/* final menu */
+
+
 /* mediaqueries */
 
 @media(min-width:48rem) {
