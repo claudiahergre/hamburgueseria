@@ -513,7 +513,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     background-color: var(--colorsecundario);
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 56.25em;
+
 }
 
 .menudeldia .dcha article {
@@ -583,7 +583,35 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         margin: var(--margingrid) 0;
     }
 
+
+
+    .menudeldia {
+        justify-content: space-around;
+
+    }
+
+    .menudeldia .izq {
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .menudeldia .dcha {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .menudeldia .dcha article {
+        padding-left: 50px;
+    }
+
+    .dcha article figure {
+        width: 25%;
+    }
 }
+
 
 @media(min-width:62rem) {
     header nav .menu {
@@ -618,4 +646,6 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     main #services article:last-child {
         width: 33.333%;
     }
+
+
 }
