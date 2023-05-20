@@ -433,42 +433,111 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 /* final aboutus */
 
 /* inicio menu */
+#menu {
+    background-color: var(--colorsecundario);
+}
+
+
+#menu .container h2 {
+    color: white;
+}
 
 .menudeldia {
     width: 100%;
-    height: 80vh;
-    background-color: aqua;
+    background-color: var(--colorsecundario);
+    margin-top: var(--margingrid);
     display: flex;
     flex-wrap: wrap;
 }
 
 .menudeldia .izq {
     width: 100%;
-    height: 100%;
-    background-color: purple;
+    background-color: var(--colorsecundario);
 }
 
 .izq ul {
     width: 100%;
-    height: 50%;
-    background-color: #fa573a;
+    background-color: var(--colorsecundario);
+    display: flex;
+    flex-direction: column;
+}
+
+.izq ul li {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3125em;
+}
+
+.izq ul li:hover {
+    background-color: var(--colorprincipal);
+}
+
+.izq ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 0.9375rem;
 }
 
 .izq .offers {
     width: 100%;
-    height: 50%;
-    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--colorsecundario);
+    margin-top: var(--margingrid)
+}
+
+.izq .offers h3 {
+    color: white;
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.izq .offers hr {
+    width: 10%;
+    color: var(--colorprincipal);
+    position: absolute;
+    left: 0;
+    top: 2.1875rem;
+}
+
+.izq .offers p {
+    color: white;
 }
 
 .menudeldia .dcha {
     width: 100%;
+    background-color: var(--colorsecundario);
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 56.25em;
 }
 
 .menudeldia .dcha article {
     width: 100%;
+    background-color: var(--colorsecundario);
 }
+
+.dcha article figure {
+    max-width: 31.25em;
+}
+
+.dcha article div h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.dcha div h3 span {
+    color: var(--colorprincipal);
+}
+
+.dcha article div p {
+    color: white;
+}
+
 
 /* final menu */
 
