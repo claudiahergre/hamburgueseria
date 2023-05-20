@@ -132,7 +132,7 @@ header nav .menu li:last-child a {
     /* Centramos verticalmente */
 }
 
-.container section {
+.container .posts {
     width: 100%;
     height: 80vh;
     display: flex;
@@ -141,7 +141,12 @@ header nav .menu li:last-child a {
     align-items: flex-start;
 }
 
-.container section article {
+
+.posts article figure {
+    width: 100%;
+}
+
+.container .posts article {
     width: calc(33.33% - 20px);
     display: flex;
     flex-wrap: wrap;
@@ -151,11 +156,24 @@ header nav .menu li:last-child a {
 
 .container section article figure {
     margin: 0;
+    position: relative;
 }
 
 .container section article img {
     width: 100%;
     height: auto;
+
+}
+
+.fecha {
+    min-width: 20%;
+    height: 70px;
+    background-color: rgba(250, 87, 58, 0.5);
+    position: absolute;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    font-weight: 700;
 }
 
 .container .cabecera h1 {
@@ -201,6 +219,8 @@ header nav .menu li:last-child a {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+
 
 /* final blog */
 
@@ -596,7 +616,9 @@ footer#menu {
         margin: var(--margingrid) 0 2em 0;
     }
 
-
+    .posts {
+        width: 33.333%;
+    }
 
     .menudeldia {
         justify-content: space-around;
@@ -631,6 +653,7 @@ footer#menu {
     .decha article div {
         width: 75%;
     }
+
 
 }
 
