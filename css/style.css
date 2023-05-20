@@ -143,8 +143,14 @@ header nav .menu li:last-child a {
     width: 100%;
 }
 
-
-
+.posts .boton {
+    display: inline-block;
+    background-color: transparent;
+    padding: 1.15rem;
+    color: var(--colorprincipal);
+    text-decoration: none;
+    border: transparent;
+}
 
 
 .fecha {
