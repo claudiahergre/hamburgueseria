@@ -121,10 +121,6 @@ header nav .menu li:last-child a {
 
 
 /* inicio blog */
-main {
-    margin: 0 20px;
-    /* margen de seguridad */
-}
 
 .container .cabecera {
     max-width: var(--anchomaximo);
@@ -433,10 +429,20 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 /* final aboutus */
 
 /* inicio menu */
-#menu {
+
+main#menu {
     background-color: var(--colorsecundario);
+    height: 100vh;
 }
 
+#menu {
+    background-color: var(--colorsecundario);
+
+}
+
+#menu .container {
+    background-color: var(--colorsecundario);
+}
 
 #menu .container h2 {
     color: white;
@@ -510,10 +516,11 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 .menudeldia .dcha {
     width: 100%;
+    height: 100vh;
     background-color: var(--colorsecundario);
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: flex-start;
 }
 
 .menudeldia .dcha article {
@@ -538,6 +545,11 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     color: white;
 }
 
+footer#menu {
+    margin-top: 0;
+
+}
+
 
 /* final menu */
 
@@ -554,7 +566,7 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     }
 
     header .nav-top .container {
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     main #services article {
@@ -601,15 +613,24 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .menudeldia .dcha article {
         padding-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .dcha article figure {
         width: 25%;
     }
+
+    .decha article div {
+        width: 75%;
+    }
+
 }
 
 
