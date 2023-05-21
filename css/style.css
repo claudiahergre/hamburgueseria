@@ -133,7 +133,6 @@ header nav .menu li:last-child a {
 }
 
 
-
 .posts {
     display: flex;
     flex-direction: column;
@@ -440,7 +439,10 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* inicio menu */
 
-main#menu {
+
+/* esto es lo que mediofunciona: */
+
+/* main#menu {
     background-color: var(--colorsecundario);
     height: 100vh;
 }
@@ -553,11 +555,107 @@ main#menu {
 
 .dcha article div p {
     color: white;
+} */
+
+/* esta es la nueva version: */
+
+#menu {
+    background-color: var(--colorsecundario);
 }
 
-footer#menu {
-    margin-top: 0;
+#menu .container h2 {
+    color: white;
+}
 
+.menudeldia {
+    width: 100%;
+    margin-top: var(--margingrid);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menudeldia .izq {
+    width: 100%;
+}
+
+.izq ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.izq ul li {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3125em;
+}
+
+.izq ul li:hover {
+    background-color: var(--colorprincipal);
+}
+
+.izq ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 0.9375rem;
+}
+
+.izq .offers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: var(--margingrid)
+}
+
+.izq .offers h3 {
+    color: white;
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.izq .offers hr {
+    width: 10%;
+    color: var(--colorprincipal);
+    position: absolute;
+    left: 0;
+    top: 2.1875rem;
+}
+
+.izq .offers p {
+    color: white;
+}
+
+.menudeldia .dcha {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.menudeldia .dcha article {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.dcha article figure {
+    max-width: 31.25em;
+}
+
+.dcha article div h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.dcha div h3 span {
+    color: var(--colorprincipal);
+}
+
+.dcha article div p {
+    color: white;
 }
 
 
@@ -644,11 +742,7 @@ footer#menu {
     }
 
     .dcha article figure {
-        width: 25%;
-    }
-
-    .decha article div {
-        width: 75%;
+        max-width: 25em;
     }
 
 
@@ -689,5 +783,20 @@ footer#menu {
         width: 33.333%;
     }
 
+    .izq {
+        width: 25%;
+    }
 
+    /* .dcha {
+        width: 75%;
+    } */
+
+    .dcha article figure {
+        width: 30%;
+    }
+
+    /*  .decha article div {
+        width: 70%;
+    }
+ */
 }
