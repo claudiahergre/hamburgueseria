@@ -133,7 +133,6 @@ header nav .menu li:last-child a {
 }
 
 
-
 .posts {
     display: flex;
     flex-direction: column;
@@ -440,17 +439,8 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
 
 /* inicio menu */
 
-main#menu {
-    background-color: var(--colorsecundario);
-    height: 100vh;
-}
 
 #menu {
-    background-color: var(--colorsecundario);
-
-}
-
-#menu .container {
     background-color: var(--colorsecundario);
 }
 
@@ -460,7 +450,6 @@ main#menu {
 
 .menudeldia {
     width: 100%;
-    background-color: var(--colorsecundario);
     margin-top: var(--margingrid);
     display: flex;
     flex-wrap: wrap;
@@ -468,12 +457,10 @@ main#menu {
 
 .menudeldia .izq {
     width: 100%;
-    background-color: var(--colorsecundario);
 }
 
 .izq ul {
     width: 100%;
-    background-color: var(--colorsecundario);
     display: flex;
     flex-direction: column;
 }
@@ -501,7 +488,6 @@ main#menu {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: var(--colorsecundario);
     margin-top: var(--margingrid)
 }
 
@@ -526,8 +512,6 @@ main#menu {
 
 .menudeldia .dcha {
     width: 100%;
-    height: 100vh;
-    background-color: var(--colorsecundario);
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -535,7 +519,7 @@ main#menu {
 
 .menudeldia .dcha article {
     width: 100%;
-    background-color: var(--colorsecundario);
+    margin: 10px 0;
 }
 
 .dcha article figure {
@@ -553,11 +537,6 @@ main#menu {
 
 .dcha article div p {
     color: white;
-}
-
-footer#menu {
-    margin-top: 0;
-
 }
 
 
@@ -644,11 +623,7 @@ footer#menu {
     }
 
     .dcha article figure {
-        width: 25%;
-    }
-
-    .decha article div {
-        width: 75%;
+        max-width: 25em;
     }
 
 
@@ -689,5 +664,13 @@ footer#menu {
         width: 33.333%;
     }
 
+    .izq {
+        width: 25%;
+    }
+
+
+    .dcha article figure {
+        width: 30%;
+    }
 
 }
