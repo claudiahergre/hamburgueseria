@@ -1,0 +1,681 @@
+@import url(reset.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* enlace de punto de ancla - boton up */
+html {
+    scroll-behavior: smooth;
+}
+
+/* variables */
+:root {
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentetitulos: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --margingrid: 1em;
+    --font-size: 1em;
+    --anchomaximo: 68.75em;
+}
+
+.container {
+    max-width: var(--anchomaximo);
+    margin: 0 auto;
+    /* margen de seguridad */
+}
+
+body {
+    font-family: var(--fuenteprincipal);
+    font-size: var(--font-size);
+}
+
+/* inicio header */
+
+header .nav-top {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+}
+
+header .nav-top .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+header .nav-top a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top a i {
+    font-size: 150%;
+}
+
+header .nav-top span {
+    color: white;
+    display: none;
+}
+
+header nav {
+    padding: 1.25em;
+}
+
+header nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header nav .menu {
+    width: 100%;
+}
+
+header nav .menu .activa {
+    color: var(--colorprincipal);
+}
+
+header nav .menu a:hover {
+    color: var(--colorprincipal);
+}
+
+header nav .hamburguesa {
+    cursor: pointer;
+    width: 1.875em;
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav figure {
+    max-width: 100px;
+
+}
+
+header nav .menu a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa
+}
+
+header nav .menu li:last-child a {
+    border-bottom: none;
+}
+
+/* final header */
+
+
+/* inicio blog */
+
+.container .cabecera {
+    max-width: var(--anchomaximo);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Centramos verticalmente */
+}
+
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts article {
+    width: 100%;
+}
+
+.posts .boton {
+    display: inline-block;
+    background-color: transparent;
+    padding: 1.15rem;
+    color: var(--colorprincipal);
+    text-decoration: none;
+    border: transparent;
+}
+
+
+.fecha {
+    width: 3.125em;
+    height: 4.375em;
+    background-color: rgba(250, 87, 58, 0.5);
+    position: absolute;
+    text-align: center;
+    padding-top: 1.25em;
+    color: white;
+    font-weight: 700;
+}
+
+.container .cabecera h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.container .cabecera h1 span {
+    color: var(--colorprincipal);
+}
+
+.container section article h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: black;
+}
+
+.container section article h5 {
+    margin: 10px 0;
+    color: var(--colorprincipal);
+}
+
+.container section article p {
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.container section article a {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--colorprincipal);
+    padding: 5px 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.container section article :is(h3,
+    h5,
+    p,
+    a) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* final blog */
+
+/* inicio footer */
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0px;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.10em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    font-size: 300%;
+    position: fixed;
+    bottom: 4.375rem;
+    right: 1.25rem;
+}
+
+/* final footer */
+
+/* inicio hero */
+.hero {
+    background-image: url(../images/fondo.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #888;
+    padding-top: 17vh;
+    color: white;
+}
+
+.hero h1 {
+    font-family: var(--fuentetitulos);
+    font-size: 2.25rem;
+}
+
+.hero h2 {
+    color: var(--colorprincipal);
+    font-size: 1.25rem;
+    margin: var(--margingrid) 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+}
+
+.boton {
+    display: inline-block;
+    background-color: var(--colorprincipal);
+    padding: 1.15rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid var(--colorprincipal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--colorprincipal)
+}
+
+.boton:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+.hero .container>div {
+    margin: var(--margingrid) 0;
+}
+
+.hero .social {
+    display: flex;
+    justify-content: space-between;
+    width: 10.5rem;
+}
+
+.hero .social a {
+    color: white;
+    font-size: 2rem;
+}
+
+.hero .container {
+    padding: 0 var(--margingrid);
+}
+
+/* final hero */
+
+/* inicio ourservices */
+main section {
+    padding: 2.125em var(--margingrid);
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+.underline {
+    position: relative;
+    width: 6.25rem;
+    margin: 0 auto;
+}
+
+.underline hr {
+    position: absolute;
+    width: 100%;
+    top: -2px;
+    border-color: var(--colorprincipal);
+}
+
+.underline span {
+    text-align: center;
+    display: block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+}
+
+main section .grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main section:last-child {
+    margin-bottom: 3em;
+}
+
+main #services article {
+    border-bottom: 1px solid #aaa;
+    padding: 1.5em 0;
+}
+
+main #services article>div i {
+    color: var(--colorprincipal);
+    font-size: 140%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+    display: inline-block;
+}
+
+main #services article h3 {
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.15em;
+    margin-bottom: var(--margingrid);
+}
+
+main section .enlace {
+    color: var(--colorprincipal);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.fa-truck {
+    transform: rotateY(180deg);
+}
+
+/* final ourservices */
+
+/* inicio aboutus */
+main #aboutus .grid figure {
+    /* background-color: tomato; */
+    width: 100%;
+    /* height: 400px; */
+}
+
+main #aboutus .grid>div {
+    /* background-color: violet; */
+    width: 100%;
+    /* height: 400px; */
+}
+
+main #aboutus .grid h3 {
+    font-size: 110%;
+    font-weight: 700;
+}
+
+main #aboutus .grid h4 {
+    margin: var(--margingrid) 0;
+    color: var(--colorprincipal);
+}
+
+main #aboutus .imagen {
+    width: 95%;
+    margin: 1.5rem auto;
+}
+
+main #aboutus .imagen .marco {
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen .marco img {
+    transform: rotateZ(-10deg);
+    transition: 1s;
+}
+
+main #aboutus .imagen:hover :is(.marco, .marco img) {
+    transform: rotateZ(0deg);
+}
+
+/* final aboutus */
+
+/* inicio menu */
+
+
+#menu {
+    background-color: var(--colorsecundario);
+}
+
+#menu .container h2 {
+    color: white;
+}
+
+.menudeldia {
+    width: 100%;
+    margin-top: var(--margingrid);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menudeldia .izq {
+    width: 100%;
+}
+
+.izq ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.izq ul li {
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3125em;
+}
+
+.izq ul li:hover {
+    background-color: var(--colorprincipal);
+}
+
+.izq ul li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 0.9375rem;
+}
+
+.izq .offers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: var(--margingrid)
+}
+
+.izq .offers h3 {
+    color: white;
+    margin: var(--margingrid) 0;
+    font-size: 110%;
+    font-weight: 700;
+}
+
+.izq .offers hr {
+    width: 10%;
+    color: var(--colorprincipal);
+    position: absolute;
+    left: 0;
+    top: 2.1875rem;
+}
+
+.izq .offers p {
+    color: white;
+}
+
+.menudeldia .dcha {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.menudeldia .dcha article {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.dcha article figure {
+    max-width: 31.25em;
+}
+
+.dcha article div h3 {
+    color: white;
+    font-weight: 700;
+}
+
+.dcha div h3 span {
+    color: var(--colorprincipal);
+}
+
+.dcha article div p {
+    color: white;
+}
+
+.dcha .enlace:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
+
+/* final menu */
+
+
+/* mediaqueries */
+
+@media(min-width:48rem) {
+    header .nav-top span {
+        display: inline;
+    }
+
+    header .nav-top a i {
+        font-size: 120%;
+    }
+
+    header .nav-top .container {
+        justify-content: space-around;
+    }
+
+    main #services article {
+        width: 50%;
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: 1.5em;
+        margin: var(--margingrid) 0;
+    }
+
+    main #services article:last-child {
+        width: 100%;
+    }
+
+    main #aboutus .grid figure,
+    main #aboutus .grid>div {
+        width: 50%;
+    }
+
+    main #aboutus .grid h3 {
+        margin-top: var(--margingrid);
+    }
+
+    main #aboutus .imagen {
+        margin: var(--margingrid) 0 2em 0;
+    }
+
+
+
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .posts article {
+        width: calc(33.333% - 20px);
+    }
+
+    .menudeldia {
+        justify-content: space-around;
+
+    }
+
+    .menudeldia .izq {
+        width: 30%;
+        margin-top: 50px;
+    }
+
+    .menudeldia .dcha {
+        width: 70%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .menudeldia .dcha article {
+        padding-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .dcha article figure {
+        max-width: 25em;
+    }
+
+
+}
+
+
+@media(min-width:62rem) {
+    header nav .menu {
+        width: auto;
+    }
+
+    header nav .hamburguesa {
+        display: none;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a {
+        padding: 0.5em 0em 1.25em 1.25em;
+        border-bottom: 0px;
+    }
+
+    footer {
+        text-align: left;
+    }
+
+    .hero .container {
+        padding: 0;
+    }
+
+    main #services article {
+        width: 33.333%;
+    }
+
+    main #services article:last-child {
+        width: 33.333%;
+    }
+
+    .izq {
+        width: 25%;
+    }
+
+
+    .dcha article figure {
+        width: 30%;
+    }
+
+}
