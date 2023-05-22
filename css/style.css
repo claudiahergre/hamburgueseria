@@ -539,6 +539,11 @@ main #aboutus .imagen:hover :is(.marco, .marco img) {
     color: white;
 }
 
+.dcha .enlace:hover i {
+    transition: transform 0.5s;
+    transform: translateX(5px);
+}
+
 
 /* final menu */
 
